@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPR Global</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee {
+      display: inline-block;
+      animation: marquee 15s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-white text-black font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white px-6 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold">SPR GLOBAL</div>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="#" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Brands</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+    <button class="bg-yellow-400 px-4 py-2 rounded-full text-black font-semibold">Contact Us</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="images/briyani.jpg" alt="Briyani Banner" class="w-full h-[400px] object-cover rounded-xl" />
+    <div class="absolute bottom-5 right-5">
+      <button class="bg-white text-black px-4 py-2 rounded-full font-semibold">Know More</button>
+    </div>
+  </section>
+  
+  <!-- Welcome Section -->
+  <section class="text-center py-10">
+    <img src="images/logo.jpg" alt="SPR Logo" class="mx-auto mb-4" />
+    <h2 class="text-2xl font-bold mb-2">WELCOME TO SPR GLOBAL</h2>
+    <p class="max-w-xl mx-auto text-gray-600">
+      Inspiring Lives, Empowering Entrepreneurs. We’re transforming culinary experiences across the globe.
+    </p>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="bg-black text-white py-12">
+    <h3 class="text-center text-3xl font-bold mb-10">BRANDS WE OPERATE</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+      <div class="bg-gray-800 p-6 rounded-lg text-center transform transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-bold mb-2">Fathima’s Kitchen</h4>
+        <p class="text-gray-400">Authentic South Indian Food</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center transform transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-bold mb-2">CHEAPBEAST</h4>
+        <p class="text-gray-400">Trendy Fashion & Lifestyle</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center transform transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-bold mb-2">SLAM</h4>
+        <p class="text-gray-400">Creative Entertainment Channel</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Business Opportunities Strip -->
+  <div class="bg-yellow-400 overflow-hidden">
+    <div class="animate-marquee whitespace-nowrap py-3 font-semibold tracking-wider text-black">
+      <span class="mx-4">BUSINESS OPPORTUNITIES •</span>
+      <span class="mx-4">BUSINESS OPPORTUNITIES •</span>
+      <span class="mx-4">BUSINESS OPPORTUNITIES •</span>
+      <span class="mx-4">BUSINESS OPPORTUNITIES •</span>
+      <span class="mx-4">BUSINESS OPPORTUNITIES •</span>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <section class="py-12 bg-white px-6 max-w-6xl mx-auto">
+    <h4 class="text-2xl font-bold mb-4">Become an Entrepreneur Today</h4>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input type="text" placeholder="Your Name" class="border p-2 rounded" required />
+      <input type="email" placeholder="Your Email" class="border p-2 rounded" required />
+      <input type="text" placeholder="Phone Number" class="border p-2 rounded" />
+      <input type="text" placeholder="Business Idea" class="border p-2 rounded" />
+      <textarea placeholder="Message" class="border p-2 rounded md:col-span-2"></textarea>
+      <button type="submit" class="bg-black text-white px-6 py-2 rounded-full md:col-span-2 w-full">Submit</button>
+    </form>
+  </section>
+
+  <!-- Nivetha Info Section -->
+  <section class="bg-gray-100 py-10 px-6 max-w-4xl mx-auto rounded-xl shadow">
+    <h4 class="text-xl font-bold mb-4 text-center">Developer Info</h4>
+    <div class="text-center space-y-2">
+      <p><strong>Name:</strong> Nivetha Sre.M</p>
+      <p><strong>Email:</strong> <a href="mailto:nivethasre2004@gmail.com" class="text-blue-600 underline">nivethasre2004@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nivetha-sre-24bb48272/" target="_blank" class="text-blue-600 underline">linkedin.com/in/nivetha-sre-24bb48272</a></p>
+      <p><strong>Contact:</strong> 9443029302</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white px-6 py-8 text-sm">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+      <div>
+        <h5 class="font-bold mb-2">SPR Global</h5>
+        <p>Inspiring Entrepreneurs, Building Dreams</p>
+      </div>
+      <div>
+        <h5 class="font-bold mb-2">Links</h5>
+        <ul>
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Brands</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold mb-2">Contact</h5>
+        <p>Email: contact@sprglobal.com</p>
+        <p>Phone: +91 9443029302</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
